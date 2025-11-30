@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: b77bdc2a-5e17-449f-893d-8a458e9d1758
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: 
+    FixedRegion: us
     Server: 
     Port: 0
     ProxyServer: 
@@ -45,6 +45,7 @@ MonoBehaviour:
   - RPCRefreshPlayerValues
   - KickPlayer
   - PlayHitSound
+  - PlaySoundAtPositionRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

@@ -8786,6 +8786,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &499893814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f884e446035b2af47ba0b1edf59a4a42, type: 3}
+  m_PrefabInstance: {fileID: 1828267599}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &502278972
 Mesh:
   m_ObjectHideFlags: 0
@@ -33117,13 +33122,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f884e446035b2af47ba0b1edf59a4a42, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1828267603}
   m_SourcePrefab: {fileID: 100100000, guid: f884e446035b2af47ba0b1edf59a4a42, type: 3}
 --- !u!4 &1828267600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f884e446035b2af47ba0b1edf59a4a42, type: 3}
   m_PrefabInstance: {fileID: 1828267599}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1828267603
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499893814}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: f884e446035b2af47ba0b1edf59a4a42, type: 3}
 --- !u!43 &1833701146
 Mesh:
   m_ObjectHideFlags: 0
@@ -39393,9 +39423,9 @@ GameObject:
   - component: {fileID: 430285556722889391}
   - component: {fileID: 430285556722889395}
   - component: {fileID: 430285556722889396}
-  - component: {fileID: 430285556722889398}
   - component: {fileID: 430285556722889397}
   - component: {fileID: 430285556722889399}
+  - component: {fileID: 430285556722889400}
   m_Layer: 8
   m_Name: RightHand Controller
   m_TagString: HandTag
@@ -39491,8 +39521,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 2
+  MaxDistance: 7.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -39527,7 +39557,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -39567,52 +39597,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &430285556722889398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430285556722889390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dbefec15c04f884fab7f8f225cd5cc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 430285556722889397}
-  LeftController: 0
-  tagSounds:
-  - tag: Wood
-    sounds:
-    - {fileID: 8300000, guid: 1a1c5c837a00508488a8be5062624e0c, type: 3}
-    - {fileID: 8300000, guid: 97cae4811adf26945922aa8988205acd, type: 3}
-    - {fileID: 8300000, guid: 27ffd3baa86fb0d4b924131f6df98aa0, type: 3}
-    - {fileID: 8300000, guid: ee64f263894602c42b68e0f2e38956eb, type: 3}
-    - {fileID: 8300000, guid: 93b8d508b9c5b7547abbc20364df767a, type: 3}
-    - {fileID: 8300000, guid: 306c6369801e22341a002518793e46f2, type: 3}
-    - {fileID: 8300000, guid: 0a0a524b1c3b66e49873edbbe5347438, type: 3}
-    - {fileID: 8300000, guid: 5b2eed0bbc086b34ea56d9512ef3c972, type: 3}
-    - {fileID: 8300000, guid: a1015281167fff44c86a4672a1137bfd, type: 3}
-    - {fileID: 8300000, guid: 212a985efc5887848a25e6961f02cb92, type: 3}
-  - tag: Rock
-    sounds:
-    - {fileID: 8300000, guid: 6b855251607c95443a0f779a804cbdf8, type: 3}
-    - {fileID: 8300000, guid: 0366f39950d378e439679fc70cd663e4, type: 3}
-    - {fileID: 8300000, guid: c14d8bb3a23c2464aa1a9187a7080a5f, type: 3}
-    - {fileID: 8300000, guid: 5a8efe03552e6ec42b8046496cbb3637, type: 3}
-    - {fileID: 8300000, guid: ef6989184e991934098ab5e530ccd610, type: 3}
-    - {fileID: 8300000, guid: 501011405189c8a4398774ee7aa0ec29, type: 3}
-    - {fileID: 8300000, guid: 180c07025fcaccf4e9e825cfd68f54fa, type: 3}
-  - tag: Carpet
-    sounds:
-    - {fileID: 8300000, guid: 8d49a0c2bde03ff46979bac5846d453e, type: 3}
-    - {fileID: 8300000, guid: 549d7a86183c220498b3415d98f6489f, type: 3}
-    - {fileID: 8300000, guid: e2d4bb9f53a86b8499fa14e5625a9be5, type: 3}
-    - {fileID: 8300000, guid: 661d6ee9c42818d4a93e9c2e86789b63, type: 3}
-    - {fileID: 8300000, guid: c1f20a4183e65d9478bf1fe8bffb08e3, type: 3}
-    - {fileID: 8300000, guid: e9c46308a2b1aa84f917676881ada460, type: 3}
-    - {fileID: 8300000, guid: 17b3909751826f64d8c8d1ca73cbcea9, type: 3}
-    - {fileID: 8300000, guid: 5a81280430bfa0947a76147f129b00d0, type: 3}
 --- !u!114 &430285556722889399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39635,6 +39619,72 @@ MonoBehaviour:
   sceneViewId: 3
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &430285556722889400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430285556722889390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 536d32e1363a32040a6e73fa00ddcf33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialSounds:
+  - materials:
+    - {fileID: 2100000, guid: 07d513a60f15e9f488f58520b3b91d05, type: 2}
+    - {fileID: 2100000, guid: 9d7830da873696842a51798377575210, type: 2}
+    - {fileID: 2100000, guid: d93ca6e572c76874dbf64c8f312b0801, type: 2}
+    - {fileID: 2100000, guid: fc3b8259420d5a44db2bafe29dc986cb, type: 2}
+    - {fileID: 2100000, guid: 294ed4f70a3c4b74c90c503efb21807e, type: 2}
+    - {fileID: 2100000, guid: a57885a157c991543ac9a196b019c91f, type: 2}
+    - {fileID: 2100000, guid: 820a7a0e01fe45340a121af0dec49bd4, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 1a1c5c837a00508488a8be5062624e0c, type: 3}
+    - {fileID: 8300000, guid: 97cae4811adf26945922aa8988205acd, type: 3}
+    - {fileID: 8300000, guid: 27ffd3baa86fb0d4b924131f6df98aa0, type: 3}
+    - {fileID: 8300000, guid: ee64f263894602c42b68e0f2e38956eb, type: 3}
+    - {fileID: 8300000, guid: 93b8d508b9c5b7547abbc20364df767a, type: 3}
+    - {fileID: 8300000, guid: 306c6369801e22341a002518793e46f2, type: 3}
+    - {fileID: 8300000, guid: 0a0a524b1c3b66e49873edbbe5347438, type: 3}
+    - {fileID: 8300000, guid: 5b2eed0bbc086b34ea56d9512ef3c972, type: 3}
+    - {fileID: 8300000, guid: a1015281167fff44c86a4672a1137bfd, type: 3}
+    - {fileID: 8300000, guid: 212a985efc5887848a25e6961f02cb92, type: 3}
+  - materials:
+    - {fileID: 2100000, guid: 1aa2539ab65966d48877c12b9bdc201c, type: 2}
+    - {fileID: 2100000, guid: efb649179a2ed2a408b64fa04ba25d57, type: 2}
+    - {fileID: 2100000, guid: 21990e9623c61264ba2a3c02607be003, type: 2}
+    - {fileID: 2100000, guid: 40692107db3cb85428a125bae5d94e69, type: 2}
+    - {fileID: 2100000, guid: 7ce83352ec53fbc468ca031de855543f, type: 2}
+    - {fileID: 2100000, guid: c2f07443d5d4eda44b3515c6a25a6392, type: 2}
+    - {fileID: 2100000, guid: 6c2339aceca6da440bafaeee65e01a57, type: 2}
+    - {fileID: 2100000, guid: f55b6b75efd970641a7017e2ae83104d, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 6b855251607c95443a0f779a804cbdf8, type: 3}
+    - {fileID: 8300000, guid: 0366f39950d378e439679fc70cd663e4, type: 3}
+    - {fileID: 8300000, guid: c14d8bb3a23c2464aa1a9187a7080a5f, type: 3}
+    - {fileID: 8300000, guid: 5a8efe03552e6ec42b8046496cbb3637, type: 3}
+    - {fileID: 8300000, guid: ef6989184e991934098ab5e530ccd610, type: 3}
+    - {fileID: 8300000, guid: 501011405189c8a4398774ee7aa0ec29, type: 3}
+    - {fileID: 8300000, guid: 180c07025fcaccf4e9e825cfd68f54fa, type: 3}
+  - materials:
+    - {fileID: 2100000, guid: ba9ba85c5fe10d3418571e6132389c10, type: 2}
+    - {fileID: 2100000, guid: 7ae14800d0461f644aed8f9b54ecea24, type: 2}
+    - {fileID: 2100000, guid: 175a35d920caf674fa15e098fbc34f34, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 8d49a0c2bde03ff46979bac5846d453e, type: 3}
+    - {fileID: 8300000, guid: 549d7a86183c220498b3415d98f6489f, type: 3}
+    - {fileID: 8300000, guid: e2d4bb9f53a86b8499fa14e5625a9be5, type: 3}
+    - {fileID: 8300000, guid: 661d6ee9c42818d4a93e9c2e86789b63, type: 3}
+    - {fileID: 8300000, guid: c1f20a4183e65d9478bf1fe8bffb08e3, type: 3}
+    - {fileID: 8300000, guid: c1f20a4183e65d9478bf1fe8bffb08e3, type: 3}
+    - {fileID: 8300000, guid: 17b3909751826f64d8c8d1ca73cbcea9, type: 3}
+    - {fileID: 8300000, guid: 5a81280430bfa0947a76147f129b00d0, type: 3}
+  useTrigger: 1
+  audioSource: {fileID: 430285556722889397}
+  cooldownTime: 0.5
+  cooldownBool: 0
 --- !u!1 &430285557118530771
 GameObject:
   m_ObjectHideFlags: 0
@@ -39908,9 +39958,9 @@ GameObject:
   - component: {fileID: 430285557470933341}
   - component: {fileID: 430285557470933345}
   - component: {fileID: 430285557470933346}
-  - component: {fileID: 430285557470933348}
   - component: {fileID: 430285557470933347}
   - component: {fileID: 430285557470933349}
+  - component: {fileID: 430285557470933350}
   m_Layer: 8
   m_Name: LeftHand Controller
   m_TagString: HandTag
@@ -40006,8 +40056,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 2
+  MaxDistance: 7.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -40042,7 +40092,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -40082,52 +40132,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &430285557470933348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430285557470933340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dbefec15c04f884fab7f8f225cd5cc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 430285557470933347}
-  LeftController: 1
-  tagSounds:
-  - tag: Wood
-    sounds:
-    - {fileID: 8300000, guid: 1a1c5c837a00508488a8be5062624e0c, type: 3}
-    - {fileID: 8300000, guid: 97cae4811adf26945922aa8988205acd, type: 3}
-    - {fileID: 8300000, guid: 27ffd3baa86fb0d4b924131f6df98aa0, type: 3}
-    - {fileID: 8300000, guid: ee64f263894602c42b68e0f2e38956eb, type: 3}
-    - {fileID: 8300000, guid: 93b8d508b9c5b7547abbc20364df767a, type: 3}
-    - {fileID: 8300000, guid: 306c6369801e22341a002518793e46f2, type: 3}
-    - {fileID: 8300000, guid: 0a0a524b1c3b66e49873edbbe5347438, type: 3}
-    - {fileID: 8300000, guid: 5b2eed0bbc086b34ea56d9512ef3c972, type: 3}
-    - {fileID: 8300000, guid: a1015281167fff44c86a4672a1137bfd, type: 3}
-    - {fileID: 8300000, guid: 212a985efc5887848a25e6961f02cb92, type: 3}
-  - tag: Rock
-    sounds:
-    - {fileID: 8300000, guid: 6b855251607c95443a0f779a804cbdf8, type: 3}
-    - {fileID: 8300000, guid: 0366f39950d378e439679fc70cd663e4, type: 3}
-    - {fileID: 8300000, guid: c14d8bb3a23c2464aa1a9187a7080a5f, type: 3}
-    - {fileID: 8300000, guid: 5a8efe03552e6ec42b8046496cbb3637, type: 3}
-    - {fileID: 8300000, guid: ef6989184e991934098ab5e530ccd610, type: 3}
-    - {fileID: 8300000, guid: 501011405189c8a4398774ee7aa0ec29, type: 3}
-    - {fileID: 8300000, guid: 180c07025fcaccf4e9e825cfd68f54fa, type: 3}
-  - tag: Carpet
-    sounds:
-    - {fileID: 8300000, guid: 8d49a0c2bde03ff46979bac5846d453e, type: 3}
-    - {fileID: 8300000, guid: 549d7a86183c220498b3415d98f6489f, type: 3}
-    - {fileID: 8300000, guid: e2d4bb9f53a86b8499fa14e5625a9be5, type: 3}
-    - {fileID: 8300000, guid: 661d6ee9c42818d4a93e9c2e86789b63, type: 3}
-    - {fileID: 8300000, guid: c1f20a4183e65d9478bf1fe8bffb08e3, type: 3}
-    - {fileID: 8300000, guid: e9c46308a2b1aa84f917676881ada460, type: 3}
-    - {fileID: 8300000, guid: 17b3909751826f64d8c8d1ca73cbcea9, type: 3}
-    - {fileID: 8300000, guid: 5a81280430bfa0947a76147f129b00d0, type: 3}
 --- !u!114 &430285557470933349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40150,6 +40154,72 @@ MonoBehaviour:
   sceneViewId: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &430285557470933350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430285557470933340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 536d32e1363a32040a6e73fa00ddcf33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialSounds:
+  - materials:
+    - {fileID: 2100000, guid: 07d513a60f15e9f488f58520b3b91d05, type: 2}
+    - {fileID: 2100000, guid: 9d7830da873696842a51798377575210, type: 2}
+    - {fileID: 2100000, guid: d93ca6e572c76874dbf64c8f312b0801, type: 2}
+    - {fileID: 2100000, guid: fc3b8259420d5a44db2bafe29dc986cb, type: 2}
+    - {fileID: 2100000, guid: 294ed4f70a3c4b74c90c503efb21807e, type: 2}
+    - {fileID: 2100000, guid: a57885a157c991543ac9a196b019c91f, type: 2}
+    - {fileID: 2100000, guid: 820a7a0e01fe45340a121af0dec49bd4, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 1a1c5c837a00508488a8be5062624e0c, type: 3}
+    - {fileID: 8300000, guid: 97cae4811adf26945922aa8988205acd, type: 3}
+    - {fileID: 8300000, guid: 27ffd3baa86fb0d4b924131f6df98aa0, type: 3}
+    - {fileID: 8300000, guid: ee64f263894602c42b68e0f2e38956eb, type: 3}
+    - {fileID: 8300000, guid: 93b8d508b9c5b7547abbc20364df767a, type: 3}
+    - {fileID: 8300000, guid: 306c6369801e22341a002518793e46f2, type: 3}
+    - {fileID: 8300000, guid: 0a0a524b1c3b66e49873edbbe5347438, type: 3}
+    - {fileID: 8300000, guid: 5b2eed0bbc086b34ea56d9512ef3c972, type: 3}
+    - {fileID: 8300000, guid: a1015281167fff44c86a4672a1137bfd, type: 3}
+    - {fileID: 8300000, guid: 212a985efc5887848a25e6961f02cb92, type: 3}
+  - materials:
+    - {fileID: 2100000, guid: 1aa2539ab65966d48877c12b9bdc201c, type: 2}
+    - {fileID: 2100000, guid: efb649179a2ed2a408b64fa04ba25d57, type: 2}
+    - {fileID: 2100000, guid: 21990e9623c61264ba2a3c02607be003, type: 2}
+    - {fileID: 2100000, guid: 40692107db3cb85428a125bae5d94e69, type: 2}
+    - {fileID: 2100000, guid: 7ce83352ec53fbc468ca031de855543f, type: 2}
+    - {fileID: 2100000, guid: c2f07443d5d4eda44b3515c6a25a6392, type: 2}
+    - {fileID: 2100000, guid: 6c2339aceca6da440bafaeee65e01a57, type: 2}
+    - {fileID: 2100000, guid: f55b6b75efd970641a7017e2ae83104d, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 6b855251607c95443a0f779a804cbdf8, type: 3}
+    - {fileID: 8300000, guid: 0366f39950d378e439679fc70cd663e4, type: 3}
+    - {fileID: 8300000, guid: c14d8bb3a23c2464aa1a9187a7080a5f, type: 3}
+    - {fileID: 8300000, guid: 5a8efe03552e6ec42b8046496cbb3637, type: 3}
+    - {fileID: 8300000, guid: ef6989184e991934098ab5e530ccd610, type: 3}
+    - {fileID: 8300000, guid: 501011405189c8a4398774ee7aa0ec29, type: 3}
+    - {fileID: 8300000, guid: 180c07025fcaccf4e9e825cfd68f54fa, type: 3}
+  - materials:
+    - {fileID: 2100000, guid: ba9ba85c5fe10d3418571e6132389c10, type: 2}
+    - {fileID: 2100000, guid: 7ae14800d0461f644aed8f9b54ecea24, type: 2}
+    - {fileID: 2100000, guid: 175a35d920caf674fa15e098fbc34f34, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 8d49a0c2bde03ff46979bac5846d453e, type: 3}
+    - {fileID: 8300000, guid: 549d7a86183c220498b3415d98f6489f, type: 3}
+    - {fileID: 8300000, guid: e2d4bb9f53a86b8499fa14e5625a9be5, type: 3}
+    - {fileID: 8300000, guid: 661d6ee9c42818d4a93e9c2e86789b63, type: 3}
+    - {fileID: 8300000, guid: c1f20a4183e65d9478bf1fe8bffb08e3, type: 3}
+    - {fileID: 8300000, guid: c1f20a4183e65d9478bf1fe8bffb08e3, type: 3}
+    - {fileID: 8300000, guid: 17b3909751826f64d8c8d1ca73cbcea9, type: 3}
+    - {fileID: 8300000, guid: 5a81280430bfa0947a76147f129b00d0, type: 3}
+  useTrigger: 1
+  audioSource: {fileID: 430285557470933347}
+  cooldownTime: 0.5
+  cooldownBool: 0
 --- !u!1 &430285557618168021
 GameObject:
   m_ObjectHideFlags: 0
